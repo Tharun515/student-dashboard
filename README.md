@@ -1,80 +1,101 @@
-Student Dashboard with ML Analysis📊
-Project Overview
-The Student Dashboard is an interactive web application built with Next.js that visualizes student performance and cognitive skills.
+# Student Dashboard with ML Analysis 📊
+
+## Project Overview
+The **Student Dashboard** is an interactive web application built with **Next.js** that visualizes student performance and cognitive skills.
 
 It combines:
-Data analysis and machine learning (Python / Colab notebook)
-Interactive charts and tables (Recharts in Next.js)
-Clustering students into learning personas
-The dashboard helps teachers or analysts quickly understand student performance patterns and cognitive skill correlations.
+- **Data analysis and machine learning** (Python / Colab notebook)
+- **Interactive charts and tables** (Recharts in Next.js)
+- **Clustering students into learning personas**
 
-Live Demo
-View the deployed dashboard here:
-https://student-dashboard-sigma-seven.vercel.app/
+The dashboard helps teachers or analysts quickly understand **student performance patterns** and **cognitive skill correlations**.
 
-Project Structure
+---
+
+## Live Demo
+View the deployed dashboard here:  
+[https://student-dashboard-sigma-seven.vercel.app/](https://student-dashboard-sigma-seven.vercel.app/)
+
+---
+
+## Project Structure
+
 student-dashboard/
 ├─ app/
-│  └─ page.js                   # Main dashboard page
+│ └─ page.js # Main dashboard page
 ├─ public/
-│  └─ student_data.json          # Dataset (JSON)
+│ └─ student_data.json # Dataset (JSON)
 ├─ analysis/
-│  └─ Student_Dashboard_Analysis.ipynb  # Colab notebook with ML & clustering
+│ └─ Student_Dashboard_Analysis.ipynb # Colab notebook with ML & clustering
 ├─ package.json
 ├─ next.config.js
 └─ README.md
 
+markdown
+Copy code
 
-Explanation:
-app/page.js → Contains the main dashboard layout, cards, charts, and table.
-public/student_data.json → Sample student dataset used in the dashboard.
-analysis/Student_Dashboard_Analysis.ipynb → Python notebook for correlation analysis, ML prediction, and clustering.
+**Explanation:**
+- `app/page.js` → Contains the main dashboard layout, cards, charts, and table  
+- `public/student_data.json` → Sample student dataset used in the dashboard  
+- `analysis/Student_Dashboard_Analysis.ipynb` → Python notebook for correlation analysis, ML prediction, and clustering  
 
-Features
-1. Overview Section
-Displays average scores (assessment, comprehension, attention, etc.)
-Shows quick statistics for overall student performance
+---
 
-2. Visualizations
-Bar Chart: Comprehension vs Assessment Score
-Scatter Chart: Attention vs Performance
-Optional Radar Chart: Student cognitive profile
+## Features
 
-3. Student Table
-Searchable and sortable
-Selecting a student updates charts dynamically
+### 1. Overview Section
+- Displays **average scores** (assessment, comprehension, attention, etc.)  
+- Shows quick statistics for overall student performance  
 
-4. Machine Learning Insights
-Correlation analysis identifies which cognitive skills influence assessment scores most
-Linear Regression predicts assessment scores from cognitive skills
-KMeans Clustering groups students into learning personas
+### 2. Visualizations
+- **Bar Chart:** Comprehension vs Assessment Score  
+- **Scatter Chart:** Attention vs Performance  
+- **Optional Radar Chart:** Student cognitive profile  
 
-Dataset Format
-The dashboard uses student_data.json with the following columns:
+### 3. Student Table
+- **Searchable and sortable**  
+- Selecting a student updates charts dynamically  
 
-student_id	name	class	comprehension	attention	focus	retention	assessment_score	engagement_time
-Student_1	Alice	10A	80	75	70	85	78	120
-Can replace with your own JSON/CSV with the same structure.
+### 4. Machine Learning Insights
+- **Correlation analysis** identifies which cognitive skills influence assessment scores most  
+- **Linear Regression** predicts assessment scores from cognitive skills  
+- **KMeans Clustering** groups students into **learning personas**  
 
-Setup Instructions
-1. Clone Repository
+---
+
+## Dataset Format
+
+The dashboard uses `student_data.json` with the following columns:
+
+| student_id | name       | class | comprehension | attention | focus | retention | assessment_score | engagement_time |
+|------------|------------|-------|---------------|----------|-------|-----------|-----------------|----------------|
+| Student_1  | Alice      | 10A   | 80            | 75       | 70    | 85        | 78              | 120            |
+
+> Can replace with your own JSON/CSV with the same structure.
+
+---
+
+## Setup Instructions
+
+### 1. Clone Repository
+```bash
 git clone https://github.com/<your-username>/student-dashboard.git
 cd student-dashboard
-
 2. Install Dependencies
+bash
+Copy code
 npm install
-
 3. Run Dashboard Locally
+bash
+Copy code
 npm run dev
-
-Open http://localhost:3000
- in your browser
+Open http://localhost:3000 in your browser
 
 ML Analysis Notebook
-
 Location: analysis/Student_Dashboard_Analysis.ipynb
 
 Contains:
+
 Data import and preprocessing
 Correlation heatmap between cognitive skills and performance
 Linear Regression model to predict assessment_score
@@ -82,15 +103,18 @@ KMeans Clustering for learning personas
 Visualizations for clusters and skill analysis
 
 Key Findings
-Correlation Insights
+Correlation Insights:
+
 Comprehension and Focus have the strongest positive correlation with assessment score
 Attention contributes moderately
 
-ML Prediction
+ML Prediction:
+
 Linear Regression predicts assessment_score using cognitive skills
 R² score shows model accuracy
 
-Clustering
+Clustering:
+
 Students grouped into 3 clusters:
 Cluster 0: High attention, moderate comprehension
 Cluster 1: Balanced skills
@@ -99,12 +123,13 @@ Cluster 2: High comprehension & focus
 Helps identify learning personas for personalized strategies
 
 Technologies Used:
+
 Frontend: Next.js, React, Recharts
 Backend/Data: JSON/CSV dataset
 Data Analysis / ML: Python, Pandas, Seaborn, scikit-learn
 Deployment: Vercel
 
-Author:
-Tharun. U
+Author
 
+Tharun. U
 GitHub: https://github.com/Tharun515
