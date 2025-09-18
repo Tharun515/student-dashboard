@@ -61,7 +61,7 @@ student-dashboard/
 
 ### 3. Student Table
 - **Searchable and sortable**  
-- Selecting a student updates charts dynamically  
+- **Selecting a student updates charts dynamically**  
 
 ### 4. Machine Learning Insights
 - **Correlation analysis** identifies which cognitive skills influence assessment scores most  
