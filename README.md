@@ -21,18 +21,25 @@ View the deployed dashboard here:
 ## Project Structure
 
 student-dashboard/
-├─ app/
-│ └─ page.js # Main dashboard page
-├─ public/
-│ └─ student_data.json # Dataset (JSON)
-├─ analysis/
-│ └─ Student_Dashboard_Analysis.ipynb # Colab notebook with ML & clustering
-├─ package.json
-├─ next.config.js
-└─ README.md
 
-markdown
-Copy code
+├─  app/ 
+
+│   └─  page.js             
+
+├─  public/
+
+│   └─  student_data.json              
+
+├─  analysis/
+
+│   └─  Student_Dashboard_Analysis.ipynb           
+
+├─  package.json
+
+├─  next.config.js
+
+└─  README.md
+
 
 **Explanation:**  
 - `app/page.js` → Contains the main dashboard layout, cards, charts, and table  
@@ -78,23 +85,26 @@ The dashboard uses `student_data.json` with the following columns:
 ## Setup Instructions
 
 ### 1. Clone Repository
-```bash
+
 git clone https://github.com/<your-username>/student-dashboard.git
+
 cd student-dashboard
-2. Install Dependencies
-bash
-Copy code
+
+### 2. Install Dependencies
+
 npm install
-3. Run Dashboard Locally
-bash
-Copy code
+
+### 3. Run Dashboard Locally
+
 npm run dev
+
 Open http://localhost:3000 in your browser
 
-ML Analysis Notebook
+## ML Analysis Notebook
+
 Location: analysis/Student_Dashboard_Analysis.ipynb
 
-Contains:
+### Contains:
 
 Data import and preprocessing
 
@@ -106,18 +116,18 @@ KMeans Clustering for learning personas
 
 Visualizations for clusters and skill analysis
 
-Key Findings
-Correlation Insights
+## Key Findings
+### Correlation Insights
 Comprehension and Focus have the strongest positive correlation with assessment scores
 
 Attention contributes moderately
 
-ML Prediction
+### ML Prediction
 Linear Regression predicts assessment_score using cognitive skills
 
 R² score shows model accuracy
 
-Clustering
+### Clustering
 Students grouped into 3 clusters:
 
 Cluster 0: High attention, moderate comprehension
@@ -128,7 +138,7 @@ Cluster 2: High comprehension & focus
 
 Helps identify learning personas for personalized teaching strategies
 
-Technologies Used
+## Technologies Used
 Frontend: Next.js, React, Recharts
 
 Backend/Data: JSON/CSV dataset
@@ -137,7 +147,7 @@ Data Analysis / ML: Python, Pandas, Seaborn, scikit-learn
 
 Deployment: Vercel
 
-Author
+## Author
 Tharun. U
 
 GitHub: https://github.com/Tharun515
